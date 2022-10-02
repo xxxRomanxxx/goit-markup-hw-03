@@ -1,0 +1,256 @@
+/*
+Колір заголовку #212121 
+основний колір тексту #757575
+білий колір #FFFFFF
+синій колір #2196F3
+колір футера адреса і телефона rgba(255, 255, 255, 0.6) 
+колір фону 1 секції #2F303A 
+*/
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
+  --footer-adress-color: rgba(255, 255, 255, 0.6);
+  --background-color-primary: #ffffff;
+  --background-color-secondary: #f5f4fa;
+  --background-color-accent: #2f303a;
+}
+body {
+  background-color: var(--background-color-primary);
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+
+/* site nav */
+.logo-nav {
+  color: var(--black-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logo-nav > span {
+  color: var(--accent-text-color);
+}
+
+.site-nav .link {
+  color: var(--title-text-r);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+
+.auth-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* section decision */
+.hero {
+  background-color: var(--background-color-accent);
+}
+.hero-title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/*hero-button*/
+.hero-button {
+  color: var(--white-text-color);
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--title-text-color);
+  background-color: var(--background-color-secondary);
+  border-color: transparent;
+}
+/* section title */
+.advantage-title,
+.work-title,
+.command-title,
+.example-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+/* section advantage */
+.advantage {
+  background-color: var(--background-color-primary);
+}
+
+.advantage h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.advantage .text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* section command */
+.command {
+  background-color: var(--background-color-secondary);
+}
+.command li {
+  background-color: var(--white-text-color);
+}
+.command-list h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.command-list p {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* footer */
+.footer {
+  background-color: var(--background-color-accent);
+}
+.footer-logo {
+  color: var(--white-text-color);
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.footer-logo > span {
+  color: var(--accent-text-color);
+}
+.footer {
+  color: var(--white-text-color);
+}
+
+.footer-adress .link {
+  color: var(--footer-adress-color);
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-adress p {
+  color: var(--white-text-color);
+}
+.footer-adress p:hover,
+.footer-adress p:focus {
+  color: var(--accent-text-color);
+}
+
+.footer-adress .link:hover,
+.footer-adress .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* example section*/
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--background-color-secondary);
+  font-family: Roboto, sans-serif;
+  border-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-text-color);
+  border-color: transparent;
+}
+
+.example .button.current{
+  color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+    border-color: transparent;
+}
+
+.example-list a {
+  text-decoration: none;
+}
+
+.example-list h2 {
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.example-list p {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+/* hidden title */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
