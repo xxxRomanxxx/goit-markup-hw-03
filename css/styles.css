@@ -27,6 +27,15 @@ body {
   list-style: none;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
 /* site nav */
 .logo-nav {
   color: var(--black-text-color);
@@ -213,10 +222,10 @@ body {
   border-color: transparent;
 }
 
-.example .button.current{
+.example .button.current {
   color: var(--white-text-color);
-    background-color: var(--accent-text-color);
-    border-color: transparent;
+  background-color: var(--accent-text-color);
+  border-color: transparent;
 }
 
 .example-list a {
