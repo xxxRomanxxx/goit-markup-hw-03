@@ -236,6 +236,7 @@ body {
   display: flex;
   padding-left: 0;
   padding-bottom: 94px;
+  text-align: center;
 }
 .command .item + .item {
   margin-left: 30px;
