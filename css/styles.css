@@ -26,14 +26,27 @@ body {
   letter-spacing: 0.03em;
 }
 
-.list {
-  margin: 0 0;
+/* header */
+header {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border-color-heder);
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+  padding: 0;
+  margin: 0;
+}
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
   list-style: none;
 }
 
 .container {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -42,9 +55,11 @@ body {
 /* site nav */
 .nav {
   display: flex;
-  padding: 32px 0;
   align-items: center;
-  border-bottom: 1px solid var(--border-color-heder);
+}
+
+.block-nav {
+  display: flex;
 }
 
 /* logo nav */
@@ -140,7 +155,6 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   margin: 0 auto;
-  min-width: 261px;
 
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
@@ -167,7 +181,6 @@ body {
 .work-title,
 .command-title,
 .example-title {
-  margin-top: 0px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -176,7 +189,7 @@ body {
 }
 /* section advantage */
 .advantage {
-  padding: 67px 67px;
+  padding: 94px 0px;
 
   background-color: var(--background-color-primary);
 }
@@ -193,7 +206,6 @@ body {
 }
 
 .advantage .title-item {
-  margin-top: 0px;
   margin-bottom: 10px;
 
   text-transform: uppercase;
@@ -202,9 +214,6 @@ body {
   line-height: 1.14;
 }
 .advantage .text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -212,7 +221,7 @@ body {
 }
 /* section work */
 .work {
-  padding-top: 54px;
+  padding-top: 0;
   padding-bottom: 94px;
 }
 .work-title {
@@ -229,17 +238,17 @@ body {
 }
 /* section command */
 .command {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--background-color-secondary);
 }
 
 .command-title {
-  padding-top: 90px;
   text-align: center;
 }
 .command-list {
   display: flex;
   padding-left: 0;
-  padding-bottom: 94px;
   text-align: center;
 }
 .command .item + .item {
@@ -251,8 +260,8 @@ body {
 }
 
 .command-list .title-item {
-  margin-top: 0px;
   margin-bottom: 10px;
+  padding-top: 30px;
 
   font-weight: 500;
   font-size: 16px;
@@ -260,8 +269,7 @@ body {
 }
 
 .command-list .text {
-  margin-top: 0px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 
   color: var(--primary-text-color);
   font-weight: 400;
@@ -278,6 +286,7 @@ body {
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+
   color: var(--white-text-color);
   font-family: Raleway, sans-serif;
   text-decoration: none;
@@ -287,9 +296,6 @@ body {
 }
 .footer-logo > span {
   color: var(--accent-text-color);
-}
-.footer-adress {
-  padding-left: 0;
 }
 
 .footer-adress .link {
@@ -303,14 +309,14 @@ body {
   letter-spacing: 0.03em;
 }
 
-.footer-adress .text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: var(--white-text-color);
-}
-.footer-adress .link:not(:last-child) {
+.footer-adress .item:not(:last-child) {
   margin-bottom: 9px;
 }
+
+.footer-adress .text {
+  color: var(--white-text-color);
+}
+
 
 .footer-adress p:hover,
 .footer-adress p:focus {
@@ -359,7 +365,7 @@ body {
 }
 .button-list {
   display: flex;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
   padding-left: 0;
   justify-content: center;
 }
@@ -371,11 +377,11 @@ body {
   flex-wrap: wrap;
   padding-left: 0;
 }
+
 .example-list .item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid var(--border-color-portfolio);
 }
 
 .example-list .item:nth-child(3n) {
@@ -388,10 +394,15 @@ body {
 .example-list .link {
   text-decoration: none;
 }
+.example-list .block {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-color-portfolio);
+  border-left: 1px solid var(--border-color-portfolio);
+  border-right: 1px solid var(--border-color-portfolio);
+}
 
 .example-list .example-title {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 4px;
 
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
@@ -402,9 +413,6 @@ body {
 }
 
 .example-list .text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 400;
